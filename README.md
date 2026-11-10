@@ -39,7 +39,7 @@ Random Forest is the deployed model. Gradient Boosting edges it on accuracy, but
 
 **What drives predictions.** Blood glucose is the strongest predictor by a wide margin, followed by systolic blood pressure, consistent with gestational diabetes and hypertensive disorders as leading drivers of maternal risk.
 
-![Feature importance](docs/feature_importance.png)
+![Feature importance](/feature_importance.png)
 ## Run it
 
 ```bash
@@ -57,7 +57,7 @@ Or open the notebook in Google Colab and run all cells.
 curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" \
   -d '{"Age": 35, "SystolicBP": 140, "DiastolicBP": 90, "BS": 13.0, "BodyTemp": 98.0, "HeartRate": 70}'
 ```
-
+   ![MamaRisk dashboard](dashboard.png)
 ## Limitations
 
 - Trained on a small dataset from one region of Bangladesh; untested on Kenyan or other East African populations.
